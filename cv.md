@@ -10,7 +10,8 @@
 
 I'm 23 years old. After completing my studies, I got a job as an electrician. Having worked in this field for several years, I realized that for me this is a path of stagnation and loss of time. I like the IT sphere for its constant development and change.
 
-- **Strengths:**
+**Strengths:**
+
 - Diligence
 - Quick learner
 - Stress resistance
