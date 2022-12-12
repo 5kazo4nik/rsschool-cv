@@ -1,13 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <h1>Alkhimov Oleg</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rsschool-cv</title>
+  <link rel="icon" href="./assets/Img/icons8-разобрать-резюме-24.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="links">
+      <nav class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="#contact">Contacts</a></li>
+          <li class="nav-item"><a href="#about">About me</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
+          <li class="nav-item"><a href="#code">Code</a></li>
+          <li class="nav-item"><a href="#education">Education</a></li>
+          <li class="nav-item"><a href="#languege">Langueges</a></li>
+          <li class="nav-item"><a href="#footer">Links</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="me">
+        <img src="./assets/Img/Lk-U8Yg4r08.jpg" alt="Me">
+        <h1>Alkhimov Oleg</h1>
+      </section>
+      <section class="contact" id="contact">
+        <h2>
+          Contact info:
+        </h2>
+        <ul>
+          <li>
+            <a href="https://github.com/5kazo4nik" target="_blank">Git-hub</a>
+          </li>
+          <li>
+            E-mail: alhimov.oleg2012@yandex.ru
+          </li>
+          <li>
+            <a href="https://vk.com/5kazo4nik" target="_blank">Vk</a>
+          </li>
+        </ul>
+      </section>
+      <section class="about" id="about">
+        <h2>About me</h2>
+        <p>
+          I'm 23 years old. After completing my studies, I got a job as an electrician. Having worked in this field for
+          several years, I realized that for me this is a path of stagnation and loss of time. I like the IT sphere for
+          its constant development and change. Also, this area attracts me because here you can endlessly improve
+          skills,
+          there are no boundaries for development.
+        </p>
+        <h3>Strengths:</h3>
+        <ul>
+          <li>Diligence</li>
+          <li>Quick learner</li>
+          <li>Stress resistance</li>
+          <li>Purposefulness</li>
+          <li>Teamplay</li>
+          <li>Adaptivity</li>
+        </ul>
+      </section>
+      <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3(Bootstrap)</li>
+          <li>JavaScript Basics</li>
+          <li>Git, Github</li>
+        </ul>
+      </section>
+      <section class="code" id="code">
+        <h2>Code example:</h2>
+        <p>Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first
+          word within the output should be capitalized only if the original word was capitalized (known as Upper Camel
+          Case, also often referred to as Pascal case). The next words should be always capitalized.</p>
+      </section>
+      <pre>const toCamelCase = (str) => {
+      if (!str) return '';
+      return str
+        .split(/_|-/)
+        .map((el, index) => (index > 0 ? el[0].toUpperCase() + el.slice(1) : el))
+        .join('');
+    };</pre>
+      <section class="education" id="education">
+        <h2>Education</h2>
+        <p>Self-education before the start of stage 0</p>
+      </section>
+      <section class="langueage" id="languege">
+        <h2>Langueges</h2>
+        <ul>
+          <li>Russian: native</li>
+          <li>English: B1</li>
+        </ul>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <a href="https://github.com/5kazo4nik" target="_blank"><img src="./assets/Svg/icons8-github.svg" alt="Git-hub">
+        <p>Visit my github</p>
+      </a>
+      <p>@ 2022</p>
+      <a href="https://rs.school/js/" target="_blank"><img src="./assets/Svg/rs_school_js.svg" alt="Rs-school icon"
+          width="76px" height="24px"></a>
+    </footer>
+  </div>
+</body>
+
 </html>
