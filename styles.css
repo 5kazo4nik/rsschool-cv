@@ -1,8 +1,361 @@
+@font-face {
+  font-family: 'Fruktur', cursive;
+  src: url('./assets/Fonts/Fruktur-Regular.ttf');
+}
+
+:root {
+  --gray: rgb(228, 229, 226);
+}
+
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+body {
+  background-color: rgb(14, 13, 13);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Fruktur';
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container {
+  background: var(--gray);
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0px 0px 20px 30px var(--gray);
+}
+
+.links {
+  display: flex;
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.my-info {
+  width: 65%;
+  background-color: rgb(208, 208, 208);
+  border-radius: 0% 7%;
+}
+
+.my-photo {
+  width: 35%;
+  height: 320px;
+}
+
+.my-photo img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10% 0%;
+  transition: all 1s ease;
+}
+
+.my-photo img:hover {
+  border-radius: 0% 10%;
+}
+
+.nav-list {
+  width: 100%;
+  padding: 18px;
+  background-color: rgb(201, 192, 187);
+}
+
+.nav-list ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.nav-item {
+  padding-left: 15px;
+}
+
+.my-name {
+  font-size: 1.3em;
+  padding-left: 30px;
+}
+
+.my-name h1:nth-child(1) {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.my-name h2:nth-child(2) {
+  margin-top: 0;
+}
+
+/* Header end */
+
+ul {
+  line-height: 2em;
+}
+
+.main-content {
+  display: flex;
+}
+
+.left-side {
+  width: 35%;
+}
+
+.right-side {
+  width: 65%;
+}
+
+.section {
+  padding-bottom: 60px;
+}
+
+.section h2,
+section h3,
+.section p {
+  padding-left: 30px;
+  margin-top: 0px;
+}
+
+.section {
+  background-color: rgb(192, 192, 192);
+}
+
+.main-content {
+  box-shadow: 5px 0px 5px -5px rgb(192, 192, 192), -5px 0px 5px -5px rgb(192, 192, 192), 0px -5px 5px -5px rgb(192, 192, 192);
+}
+
+.about {
+  height: 100%;
+}
+
+.left-side .section {
+  border-radius: 0% 10% 0% 0%;
+  border-right: 1px solid rgb(229, 228, 226);
+  border-top: 1px solid rgb(229, 228, 226);
+}
+
+.right-side .section,
+.left-side .section {
+  padding-top: 15px;
+}
+
+.right-side .section {
+  border-top: 1px solid rgb(229, 228, 226);
+  border-radius: 5% 0% 0% 0%;
+}
+
+.strengths {
+  padding-top: 20px;
+}
+
+.code-ex {
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 40px;
+  border-top: 2px solid rgb(229, 228, 226);
+  box-shadow: 5px 0px 5px -5px rgb(192, 192, 192), -5px 0px 5px -5px rgb(192, 192, 192), 0px 5px 5px -5px rgb(192, 192, 192);
+}
+
+.code-ex p {
+  margin-bottom: 50px;
+}
+
+.code pre {
+  padding-left: 20px;
+  margin: 0;
+  background-color: rgb(14, 13, 13);
+  color: rgb(229, 228, 226);
+  border-bottom: 2px solid rgb(229, 228, 226);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer p {
+  margin-top: 0px;
+}
+
+/* Main end */
+
+.list-contact-value {
+  list-style: none;
+}
+
+.nav-item a,
+.list-contact-value a {
+  position: relative;
+  color: rgb(71, 74, 81);
+  transition: all 0.5s;
+}
+
+.nav-item a::before,
+.list-contact-value a::before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 0px;
+  bottom: 0px;
+  background-color: rgb(14, 13, 13);
+  transition: all 1s ease;
+}
+
+.nav-item a:hover,
+.list-contact-value a:hover {
+  color: rgb(14, 13, 13);
+}
+
+.nav-item a:hover::before,
+.list-contact-value a:hover::before {
+  width: 100%;
+}
+
+.list-contact-value a::after {
+  content: '';
+  background-color: rgb(41, 49, 51);
+  position: absolute;
+  width: 0px;
+  height: 18px;
+  bottom: 0%;
+  left: 110%;
+  transition: all 1s ease;
+}
+
+.list-contact-value a:hover::after {
+  width: 30px;
+}
+
+.list-contact {
+  position: relative;
+}
+
+.list-contact-value:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  bottom: 74%;
+  left: 2.5%;
+  width: 25px;
+  height: 25px;
+  background-image: url(./assets/Svg/icons8-github2.svg);
+  background-size: 25px 25px;
+}
+
+.list-contact-value:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  bottom: 40%;
+  left: 2.5%;
+  width: 25px;
+  height: 25px;
+  background-image: url(./assets/Svg/icons8-vk-в-круге.svg);
+  background-size: 25px 25px;
+}
+
+.list-contact-value:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  bottom: 5%;
+  left: 2.5%;
+  width: 25px;
+  height: 25px;
+  background-image: url(./assets/Svg/icons8-почта.svg);
+  background-size: 25px 25px;
+}
+
+.list-skills {
+  position: relative;
+}
+
+.list-skills-value {
+  list-style: none;
+}
+
+.list-skills-value:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  bottom: 79%;
+  left: 2.5%;
+  background-image: url(./assets/Svg/icons8-html-5.svg);
+  background-size: 25px 25px;
+}
+
+.list-skills-value:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  height: 27px;
+  width: 27px;
+  bottom: 53%;
+  left: 2.5%;
+  background-image: url(./assets/Svg/icons8-css3.svg);
+  background-size: 27px 27px;
+}
+
+.list-skills-value:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  bottom: 29%;
+  left: 2.5%;
+  background-image: url(./assets/Svg/icons8-javascript.svg);
+  background-size: 25px 25px;
+}
+
+.list-skills-value:nth-child(4)::before {
+  content: '';
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  bottom: 3.5%;
+  left: 2.5%;
+  background-image: url(./assets/Svg/icons8-git.svg);
+  background-size: 25px 25px;
+}
+
+.list-lang {
+  position: relative;
+}
+
+.list-lang-value {
+  list-style: none;
+}
+
+.list-lang-value:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 3%;
+  bottom: 58%;
+  background-image: url(./assets/Img/icons8-россия-16.png);
+  background-size: 25px 25px;
+}
+
+.list-lang-value:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 3%;
+  bottom: 7%;
+  background-image: url(./assets/Img/icons8-великобритания-16.png);
+  background-size: 25px 25px;
+}
+
+.list-str-value {
+  list-style: none;
 }

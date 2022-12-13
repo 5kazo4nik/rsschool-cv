@@ -11,103 +11,119 @@
 </head>
 
 <body>
-  <div class="container">
+  <main class="container">
     <header class="links">
-      <nav class="nav-list">
-        <ul>
-          <li class="nav-item"><a href="#contact">Contacts</a></li>
-          <li class="nav-item"><a href="#about">About me</a></li>
-          <li class="nav-item"><a href="#skills">Skills</a></li>
-          <li class="nav-item"><a href="#code">Code</a></li>
-          <li class="nav-item"><a href="#education">Education</a></li>
-          <li class="nav-item"><a href="#languege">Langueges</a></li>
-          <li class="nav-item"><a href="#footer">Links</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <section class="me">
+      <div class="my-photo">
         <img src="./assets/Img/Lk-U8Yg4r08.jpg" alt="Me">
-        <h1>Alkhimov Oleg</h1>
-      </section>
-      <section class="contact" id="contact">
-        <h2>
-          Contact info:
-        </h2>
-        <ul>
-          <li>
-            <a href="https://github.com/5kazo4nik" target="_blank">Git-hub</a>
-          </li>
-          <li>
-            E-mail: alhimov.oleg2012@yandex.ru
-          </li>
-          <li>
-            <a href="https://vk.com/5kazo4nik" target="_blank">Vk</a>
-          </li>
-        </ul>
-      </section>
-      <section class="about" id="about">
-        <h2>About me</h2>
-        <p>
-          I'm 23 years old. After completing my studies, I got a job as an electrician. Having worked in this field for
-          several years, I realized that for me this is a path of stagnation and loss of time. I like the IT sphere for
-          its constant development and change. Also, this area attracts me because here you can endlessly improve
-          skills,
-          there are no boundaries for development.
-        </p>
-        <h3>Strengths:</h3>
-        <ul>
-          <li>Diligence</li>
-          <li>Quick learner</li>
-          <li>Stress resistance</li>
-          <li>Purposefulness</li>
-          <li>Teamplay</li>
-          <li>Adaptivity</li>
-        </ul>
-      </section>
-      <section class="skills" id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3(Bootstrap)</li>
-          <li>JavaScript Basics</li>
-          <li>Git, Github</li>
-        </ul>
-      </section>
-      <section class="code" id="code">
-        <h2>Code example:</h2>
-        <p>Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first
-          word within the output should be capitalized only if the original word was capitalized (known as Upper Camel
-          Case, also often referred to as Pascal case). The next words should be always capitalized.</p>
-      </section>
+      </div>
+      <div class="my-info">
+        <nav class="nav-list">
+          <ul>
+            <li class="nav-item"><a href="#contact">Contacts</a></li>
+            <li class="nav-item"><a href="#about">About me</a></li>
+            <li class="nav-item"><a href="#skills">Skills</a></li>
+            <li class="nav-item"><a href="#code">Code</a></li>
+            <li class="nav-item"><a href="#education">Education</a></li>
+            <li class="nav-item"><a href="#languege">Langueges</a></li>
+            <li class="nav-item"><a href="#footer">Links</a></li>
+          </ul>
+        </nav>
+        <div class="my-name">
+          <h1>Oleg Alkhimov</h1>
+          <h2>Future frontend devoloper</h2>
+        </div>
+      </div>
+    </header>
+    <div class="main-content">
+      <aside class="left-side">
+        <section class="section contact" id="contact">
+          <h2>
+            Contact info
+          </h2>
+          <ul class="list-contact">
+            <li class="list-contact-value">
+              <a href="https://github.com/5kazo4nik" target="_blank">Git-hub</a>
+            </li>
+            <li class="list-contact-value">
+              <a href="https://vk.com/5kazo4nik" target="_blank">Vk</a>
+            </li>
+            <li class="list-contact-value">
+              E-mail: alhimov.oleg2012@yandex.ru
+            </li>
+          </ul>
+        </section>
+        <section class="section skills" id="skills">
+          <h2>Skills</h2>
+          <ul class="list-skills">
+            <li class="list-skills-value">HTML5</li>
+            <li class="list-skills-value">CSS3(Bootstrap)</li>
+            <li class="list-skills-value">JavaScript Basics</li>
+            <li class="list-skills-value">Git, Github</li>
+          </ul>
+        </section>
+        <section class="section education" id="education">
+          <h2>Education</h2>
+          <p>Self-education before the start of stage 0</p>
+        </section>
+        <section class="section langueage" id="languege">
+          <h2>Langueges</h2>
+          <ul class="list-lang">
+            <li class="list-lang-value">Russian: native</li>
+            <li class="list-lang-value">English: B1</li>
+          </ul>
+        </section>
+      </aside>
+      <aside class="right-side">
+        <section class="section about" id="about">
+          <h2>About me</h2>
+          <p>
+            I'm 23 years old. After completing my studies, I got a job as an electrician. Having worked in this field
+            for
+            several years, I realized that for me this is a path of stagnation and loss of time. I like the IT sphere
+            for
+            its constant development and change. Also, this area attracts me because here you can endlessly improve
+            skills,
+            there are no boundaries for development.
+          </p>
+          <section class="section strengths">
+            <h3>Strengths</h3>
+            <ul class="list-str">
+              <li class="list-str-value">> Diligence</li>
+              <li class="list-str-value">> Quick learner</li>
+              <li class="list-str-value">> Stress resistance</li>
+              <li class="list-str-value">> Purposefulness</li>
+              <li class="list-str-value">> Teamplay</li>
+              <li class="list-str-value">> Adaptivity</li>
+            </ul>
+          </section>
+        </section>
+      </aside>
+    </div>
+    <section class="section code-ex" id="code">
+      <h2>Code example:</h2>
+      <p>Complete the method/function so that it converts dash/underscore delimited words into camel casing. The
+        first
+        word within the output should be capitalized only if the original word was capitalized (known as Upper Camel
+        Case, also often referred to as Pascal case). The next words should be always capitalized.</p>
+      <code class="code">
       <pre>const toCamelCase = (str) => {
-      if (!str) return '';
-      return str
-        .split(/_|-/)
-        .map((el, index) => (index > 0 ? el[0].toUpperCase() + el.slice(1) : el))
-        .join('');
-    };</pre>
-      <section class="education" id="education">
-        <h2>Education</h2>
-        <p>Self-education before the start of stage 0</p>
-      </section>
-      <section class="langueage" id="languege">
-        <h2>Langueges</h2>
-        <ul>
-          <li>Russian: native</li>
-          <li>English: B1</li>
-        </ul>
-      </section>
-    </main>
+          if (!str) return '';
+          return str
+            .split(/_|-/)
+            .map((el, index) => (index > 0 ? el[0].toUpperCase() + el.slice(1) : el))
+            .join('');
+};</pre>
+</code>
+    </section>
     <footer id="footer" class="footer">
       <a href="https://github.com/5kazo4nik" target="_blank"><img src="./assets/Svg/icons8-github.svg" alt="Git-hub">
         <p>Visit my github</p>
       </a>
-      <p>@ 2022</p>
+      <h1>@2022</h1>
       <a href="https://rs.school/js/" target="_blank"><img src="./assets/Svg/rs_school_js.svg" alt="Rs-school icon"
-          width="76px" height="24px"></a>
+          width="100px" height="50px"></a>
     </footer>
-  </div>
+  </main>
 </body>
 
 </html>
