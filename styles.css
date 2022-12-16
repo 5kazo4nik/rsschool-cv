@@ -51,7 +51,8 @@ body {
 
 .my-photo {
   width: 35%;
-  height: 320px;
+  max-height: 320px;
+  max-width: 350px;
 }
 
 .my-photo img {
@@ -77,6 +78,7 @@ body {
   display: flex;
   justify-content: flex-end;
   margin: 0;
+  line-height: 20px;
 }
 
 .nav-item {
@@ -188,7 +190,12 @@ section h3,
   margin-top: 0px;
 }
 
-/* Main end */
+.footer a {
+  width: 100px;
+  height: 50px;
+}
+
+/* Main end______________________________________________ */
 
 .list-contact-value {
   list-style: none;
@@ -358,4 +365,32 @@ section h3,
 
 .list-str-value {
   list-style: none;
+}
+
+.section h2 {
+  position: relative;
+}
+
+.underline::before {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  border-radius: 70%;
+  background-color: rgb(255, 253, 208);
+  bottom: 0px;
+  left: 0px;
+  animation: h2line 4s alternate ease 1;
+}
+
+@keyframes h2line {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 300px;
+  }
+  100% {
+    width: 0px;
+  }
 }

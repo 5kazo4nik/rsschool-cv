@@ -22,10 +22,9 @@
             <li class="nav-item"><a href="#contact">Contacts</a></li>
             <li class="nav-item"><a href="#about">About me</a></li>
             <li class="nav-item"><a href="#skills">Skills</a></li>
-            <li class="nav-item"><a href="#code">Code</a></li>
             <li class="nav-item"><a href="#education">Education</a></li>
             <li class="nav-item"><a href="#languege">Langueges</a></li>
-            <li class="nav-item"><a href="#footer">Links</a></li>
+            <li class="nav-item"><a href="#code">Code</a></li>
           </ul>
         </nav>
         <div class="my-name">
@@ -105,25 +104,25 @@
         first
         word within the output should be capitalized only if the original word was capitalized (known as Upper Camel
         Case, also often referred to as Pascal case). The next words should be always capitalized.</p>
-      <code class="code">
-      <pre>const toCamelCase = (str) => {
+      <div class="code">
+        <pre>const toCamelCase = (str) => {
           if (!str) return '';
           return str
             .split(/_|-/)
             .map((el, index) => (index > 0 ? el[0].toUpperCase() + el.slice(1) : el))
             .join('');
 };</pre>
-</code>
+      </div>
     </section>
     <footer id="footer" class="footer">
       <a href="https://github.com/5kazo4nik" target="_blank"><img src="./assets/Svg/icons8-github.svg" alt="Git-hub">
         <p>Visit my github</p>
       </a>
-      <h1>@2022</h1>
-      <a href="https://rs.school/js/" target="_blank"><img src="./assets/Svg/rs_school_js.svg" alt="Rs-school icon"
-          width="100px" height="50px"></a>
+      <h2>@2022</h2>
+      <a href="https://rs.school/js/" target="_blank"><img src="./assets/Svg/rs_school_js.svg" alt="Rs-school icon"></a>
     </footer>
   </main>
+  <script src="index.js"></script>
 </body>
 
 </html>
