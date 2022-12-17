@@ -1,13 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <h1>Alkhimov Oleg</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rsschool-cv</title>
+  <link rel="icon" href="./assets/Img/icons8-разобрать-резюме-24.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="container">
+    <header class="links">
+      <div class="my-photo">
+        <img src="./assets/Img/Lk-U8Yg4r08.jpg" alt="Me">
+      </div>
+      <div class="my-info">
+        <div class="burg-btn">
+          <div class="burg-line"></div>
+          <div class="burg-line"></div>
+          <div class="burg-line"></div>
+        </div>
+        <nav class="nav-list">
+          <ul>
+            <li class="nav-item"><a href="#contact">Contacts</a></li>
+            <li class="nav-item"><a href="#about">About me</a></li>
+            <li class="nav-item"><a href="#skills">Skills</a></li>
+            <li class="nav-item"><a href="#education">Education</a></li>
+            <li class="nav-item"><a href="#languege">Langueges</a></li>
+            <li class="nav-item"><a href="#code">Code</a></li>
+          </ul>
+        </nav>
+        <div class="my-name">
+          <h1>Oleg Alkhimov</h1>
+          <h2>Future frontend devoloper</h2>
+        </div>
+      </div>
+    </header>
+    <div class="main-content">
+      <aside class="left-side">
+        <section class="section contact" id="contact">
+          <h2>
+            Contact info
+          </h2>
+          <ul class="list-contact">
+            <li class="list-contact-value">
+              <div><a href="https://github.com/5kazo4nik" target="_blank">Git-hub</a></div>
+            </li>
+            <li class="list-contact-value">
+              <div><a href="https://vk.com/5kazo4nik" target="_blank">Vk</a></div>
+            </li>
+            <li class="list-contact-value">
+              <div>E-mail: alhimov.oleg2012@yandex.ru</div>
+            </li>
+          </ul>
+        </section>
+        <section class="section skills" id="skills">
+          <h2>Skills</h2>
+          <ul class="list-skills">
+            <li class="list-skills-value">
+              <div>HTML5</div>
+            </li>
+            <li class="list-skills-value">
+              <div>CSS3(Bootstrap)</div>
+            </li>
+            <li class="list-skills-value">
+              <div>JavaScript Basics</div>
+            </li>
+            <li class="list-skills-value">
+              <div>Git, Github</div>
+            </li>
+          </ul>
+        </section>
+        <section class="section education" id="education">
+          <h2>Education</h2>
+          <p>Self-education before the start of stage 0</p>
+        </section>
+        <section class="section langueage" id="languege">
+          <h2>Langueges</h2>
+          <ul class="list-lang">
+            <li class="list-lang-value">
+              <div>Russian: native</div>
+            </li>
+            <li class="list-lang-value">
+              <div>English: B1</div>
+            </li>
+          </ul>
+        </section>
+      </aside>
+      <aside class="right-side">
+        <section class="section about" id="about">
+          <h2>About me</h2>
+          <p>
+            I'm 23 years old. After completing my studies, I got a job as an electrician. Having worked in this field
+            for
+            several years, I realized that for me this is a path of stagnation and loss of time. I like the IT sphere
+            for
+            its constant development and change. Also, this area attracts me because here you can endlessly improve
+            skills,
+            there are no boundaries for development.
+          </p>
+          <section class="section strengths">
+            <h3>Strengths</h3>
+            <ul class="list-str">
+              <li class="list-str-value">> Diligence</li>
+              <li class="list-str-value">> Quick learner</li>
+              <li class="list-str-value">> Stress resistance</li>
+              <li class="list-str-value">> Purposefulness</li>
+              <li class="list-str-value">> Teamplay</li>
+              <li class="list-str-value">> Adaptivity</li>
+            </ul>
+          </section>
+        </section>
+      </aside>
+    </div>
+    <section class="section code-ex" id="code">
+      <h2>Code example:</h2>
+      <p>Complete the method/function so that it converts dash/underscore delimited words into camel casing. The
+        first
+        word within the output should be capitalized only if the original word was capitalized (known as Upper Camel
+        Case, also often referred to as Pascal case). The next words should be always capitalized.</p>
+      <div class="code">
+        <pre>const toCamelCase = (str) => {
+  if (!str) return '';
+  return str
+    .split(/_|-/)
+    .map((el, index) =>
+    (index > 0 ? el[0].toUpperCase() + el.slice(1) : el))
+    .join('');
+};</pre>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <a href="https://github.com/5kazo4nik" target="_blank"><img src="./assets/Svg/icons8-github.svg" alt="Git-hub">
+        <p>Visit my github</p>
+      </a>
+      <h2>@2022</h2>
+      <a href="https://rs.school/js/" target="_blank"><img src="./assets/Svg/rs_school_js.svg" alt="Rs-school icon"></a>
+    </footer>
+  </main>
+  <script src="index.js"></script>
+</body>
+
 </html>
