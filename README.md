@@ -1,2 +1,2 @@
-https://5kazo4nik.github.io/rsschool-cv/cv
-https://5kazo4nik.github.io/rsschool-cv/ 
+1) https://5kazo4nik.github.io/rsschool-cv/cv
+2) https://5kazo4nik.github.io/rsschool-cv/
