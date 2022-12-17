@@ -17,6 +17,11 @@
         <img src="./assets/Img/Lk-U8Yg4r08.jpg" alt="Me">
       </div>
       <div class="my-info">
+        <div class="burg-btn">
+          <div class="burg-line"></div>
+          <div class="burg-line"></div>
+          <div class="burg-line"></div>
+        </div>
         <nav class="nav-list">
           <ul>
             <li class="nav-item"><a href="#contact">Contacts</a></li>
@@ -55,16 +60,16 @@
           <h2>Skills</h2>
           <ul class="list-skills">
             <li class="list-skills-value">
-              <div>HTML5</з>
+              <div>HTML5</div>
             </li>
             <li class="list-skills-value">
-              <div>CSS3(Bootstrap)</з>
+              <div>CSS3(Bootstrap)</div>
             </li>
             <li class="list-skills-value">
-              <div>JavaScript Basics</з>
+              <div>JavaScript Basics</div>
             </li>
             <li class="list-skills-value">
-              <div>Git, Github</з>
+              <div>Git, Github</div>
             </li>
           </ul>
         </section>
@@ -118,11 +123,12 @@
         Case, also often referred to as Pascal case). The next words should be always capitalized.</p>
       <div class="code">
         <pre>const toCamelCase = (str) => {
-          if (!str) return '';
-          return str
-            .split(/_|-/)
-            .map((el, index) => (index > 0 ? el[0].toUpperCase() + el.slice(1) : el))
-            .join('');
+  if (!str) return '';
+  return str
+    .split(/_|-/)
+    .map((el, index) =>
+    (index > 0 ? el[0].toUpperCase() + el.slice(1) : el))
+    .join('');
 };</pre>
       </div>
     </section>
